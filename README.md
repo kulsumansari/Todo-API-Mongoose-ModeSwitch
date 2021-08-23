@@ -9,12 +9,10 @@ create task, update task and delete task.This backend server has two modes,
  
 2. FILE SYETEM
 
-In a Databse It uses mongodb database operations to manipulate Todos in the database . 
+In a Databse operation mode server uses mongodb database operations to manipulate Todos in the database . 
 
 If the mode is not set (in config.env file) the backend server switches to default mode which is file system mode. All read/write operations are performed on JSON file(in this case tasks.json) where all tasks are stored.  
 
-
-#### Server Url : https://todolist-backend-server.herokuapp.com/
 
 #### Installation and Run
  1. Installation
