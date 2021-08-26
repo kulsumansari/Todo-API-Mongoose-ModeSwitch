@@ -2,19 +2,26 @@
 
 #### Key Concepts : NodeJS, Express, MVC , Mongodb , Mongoose , dotenev
 
+#### Live Server URL : https://todo-backend-switch-mode.herokuapp.com/
+
 A simple Todo backend server application built using Node.js . It allows to make API calls to get all tasks, get task by Id,
-create task, update task and delete task.This backend server has two modes,
+create task, update task and delete task.
+
+This backend server has two operation modes,
 
 1. DATABASE
  
 2. FILE SYETEM
 
-In a Databse operation mode server uses mongodb database operations to manipulate Todos in the database . 
+If the `**MODE**` is set to `**DATABASE**` in config.env , The server's operation mode will be switched to DATABASE. In a Databse operation mode server uses mongodb database operations to manipulate Todos in the database (implemeted in taskControllerDB.js). 
 
 If the mode is not set (in config.env file) the backend server switches to default mode which is file system mode. All read/write operations are performed on JSON file(in this case tasks.json) where all tasks are stored.  
 
 
 #### Installation and Run
+
+To Setup this project locally follow below mentioned steps:
+
  1. Installation
  
    - Clone the Repository
@@ -35,7 +42,7 @@ If the mode is not set (in config.env file) the backend server switches to defau
   node server.js
   ```
     
-##### API Endpoint : http://127.0.0.1:4000
+##### API Endpoint : http://127.0.0.1:<Your Port>
 
 
 ## API
@@ -275,3 +282,33 @@ If the mode is not set (in config.env file) the backend server switches to defau
         "message": "Invalid Id"
      }
       ```
+      
+      ## Run in postman
+
+You can test this API on Postman :
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/88c60e2df7d8e2ab003d?action=collection%2Fimport)
+
+## Project Folder Structure
+```bash
+
+├── app.js
+├── server.js
+├── package.json
+├── package-lock.json
+├── README.md
+├── config.env
+├── controllers
+│   └── taskControllerDB.js
+│   └── taskControllerFS.js
+├── data
+│   └── tasks.json
+├── models
+│   └── taskModelFS.js
+│   └── taskModelMongoose.js
+├── routes
+    └── taskRouter.js
+├── utils
+    └── switch.js
+    
+
