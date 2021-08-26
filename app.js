@@ -5,7 +5,7 @@ const app = express();
 
 const taskRouter = require("./router/taskRouter")
 
-let text= `<embed type="text/markdown" src="https://kulsumansari.github.io/Todo-Backend-API-Server/" height="100%" width="100%"/>`;
+let text= `<embed type="text/markdown" src="https://kulsumansari.github.io/Todo-API-Mongoose-ModeSwitch/" height="100%" width="100%"/>`;
 fs.writeFileSync("./public/index.html", text);
 
 app.use(express.json());
