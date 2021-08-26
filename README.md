@@ -13,7 +13,7 @@ This backend server has two operation modes,
  
 2. FILE SYETEM
 
-If the `**MODE**` is set to `**DATABASE**` in config.env , The server's operation mode will be switched to DATABASE. In a Databse operation mode server uses mongodb database operations to manipulate Todos in the database (implemeted in taskControllerDB.js). 
+If the **MODE** is set to **DATABASE** in config.env , The server's operation mode will be switched to DATABASE. In a Databse operation mode server uses mongodb database operations to manipulate Todos in the database (implemeted in taskControllerDB.js). 
 
 If the mode is not set (in config.env file) the backend server switches to default mode which is file system mode. All read/write operations are performed on JSON file(in this case tasks.json) where all tasks are stored.  
 
