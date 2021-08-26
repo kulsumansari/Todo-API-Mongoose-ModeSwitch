@@ -1,11 +1,12 @@
 const express = require('express')
 const cors =require('cors')
+const fs = require('fs')
 const app = express();
 
 const taskRouter = require("./router/taskRouter")
 
-// const taskRouter = require("./router/taskRouterDB")
-// const taskRouter = require("./router/taskRouter")
+let text= `<embed type="text/markdown" src="https://kulsumansari.github.io/Todo-Backend-API-Server/" height="100%" width="100%"/>`;
+fs.writeFileSync("./public/index.html", text);
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
