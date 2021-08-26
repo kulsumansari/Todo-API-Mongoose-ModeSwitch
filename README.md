@@ -1,6 +1,6 @@
 # Todo-API-Mongoose-ModeSwitch
 
-#### Key Concepts : NodeJS, Express, MVC , Mongodb , Mongoose , dotnev
+#### Key Concepts : NodeJS, Express, MVC , Mongodb , Mongoose , dotenv
 
 #### [Live Server URL ]( https://todo-backend-switch-mode.herokuapp.com/)
 
