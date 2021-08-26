@@ -1,8 +1,8 @@
 # Todo-API-Mongoose-ModeSwitch
 
-#### Key Concepts : NodeJS, Express, MVC , Mongodb , Mongoose , dotenev
+#### Key Concepts : NodeJS, Express, MVC , Mongodb , Mongoose , dotnev
 
-#### Live Server URL : https://todo-backend-switch-mode.herokuapp.com/
+#### [Live Server URL ]( https://todo-backend-switch-mode.herokuapp.com/)
 
 A simple Todo backend server application built using Node.js . It allows to make API calls to get all tasks, get task by Id,
 create task, update task and delete task.
@@ -34,15 +34,21 @@ To Setup this project locally follow below mentioned steps:
   ```
   npm install
   ```
-    
-    
-  2. Run the Project
+  
+  2. Configure Database 
+   
+   a.Install Mongodb database in your system 
+   
+   b.Create a database named Todos
+   
+   
+  3. Run the Project
   
   ```
   node server.js
   ```
     
-##### API Endpoint : http://127.0.0.1:<Your Port>
+##### API Endpoint : http://127.0.0.1:YOUR_PORT
 
 
 ## API
@@ -308,7 +314,7 @@ You can test this API on Postman :
 │   └── taskModelMongoose.js
 ├── routes
     └── taskRouter.js
-├── utils
+└── utils
     └── switch.js
     
 
